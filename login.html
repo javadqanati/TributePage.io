@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login • Tribute Portal</title>
+  <link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <div class="brand"><span class="logo"></span> Tribute Portal</div>
+      <nav>
+        <a href="register.html">Register</a>
+        <a href="tribute.html">View Tribute</a>
+      </nav>
+    </header>
+
+    <main class="card" aria-labelledby="login-title">
+      <h1 id="login-title">Welcome back</h1>
+      <p class="lead">Enter any username and password to proceed (demo only).</p>
+
+      <form action="tribute.html" method="get">
+        <div class="grid grid-2">
+          <div>
+            <label for="username">Username</label>
+            <input class="input" type="text" id="username" name="username" required />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input class="input" type="password" id="password" name="password" required />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Enter Tribute</button>
+          <a class="btn btn-ghost" href="register.html">Create an account</a>
+        </div>
+      </form>
+    </main>
+
+    <footer>© 2025 Tribute Demo. For academic use only.</footer>
+  </div>
+</body>
+</html>
